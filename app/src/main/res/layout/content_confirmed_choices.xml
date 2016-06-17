@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ap.jesus.migs.ConfirmedChoices"
+    tools:showIn="@layout/activity_confirmed_choices">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BACK"
+        android:id="@+id/back_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DRAW"
+        android:id="@+id/draw_button"
+        android:layout_alignTop="@+id/back_button"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/white"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Duración máxima de la visita (min)"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/back_button"
+        android:layout_toLeftOf="@+id/draw_button"
+        android:layout_toStartOf="@+id/draw_button" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/delta"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_above="@+id/draw_button" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2">
+
+        <RelativeLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/button_draw"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="80dp"
+            android:id="@+id/relativeLayout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Historia"
+                android:id="@+id/textView_historia"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="España"
+                android:id="@+id/textView_espana"
+                android:layout_below="@+id/textView_historia"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="FDI"
+                android:id="@+id/textView_fdi"
+                android:layout_below="@+id/textView_espana"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Docencia"
+                android:id="@+id/textView_docencia"
+                android:layout_below="@+id/textView_fdi"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Videojuegos"
+                android:id="@+id/textView_videojuegos"
+                android:layout_below="@+id/textView_docencia"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Cine"
+                android:id="@+id/textView_cine"
+                android:layout_below="@+id/textView_videojuegos"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Curiosidades"
+                android:id="@+id/textView_curiosidad"
+                android:layout_below="@+id/textView_cine"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Ciencias"
+                android:id="@+id/textView_ciencias"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView_curiosidad" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Periféricos"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/textView_perifericos"
+                android:layout_below="@+id/textView_ciencias"
+                android:layout_alignEnd="@+id/textView_servidores"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Arte"
+                android:id="@+id/textView_arte"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView_perifericos" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Redes"
+                android:id="@+id/textView_redes"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView_arte" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="PCs"
+                android:id="@+id/textView_pcs"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView_redes" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hardware"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/textView_hardware"
+                android:layout_below="@+id/textView_pcs"
+                android:layout_alignEnd="@+id/textView_curiosidad"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Almacenamiento"
+                android:id="@+id/textView_almacenamiento"
+                android:layout_below="@+id/textView_hardware"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Servidores"
+                android:id="@+id/textView_servidores"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="53dp"
+                android:layout_below="@+id/textView_almacenamiento"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/value_historia"
+
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textView_almacenamiento"
+                android:layout_alignBottom="@+id/textView_historia"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:indeterminate="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/value_espana"
+
+                android:layout_below="@+id/value_historia"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignBottom="@+id/textView_espana"
+                android:layout_alignLeft="@+id/value_historia"
+                android:layout_alignStart="@+id/value_historia"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:indeterminate="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/value_fdi"
+
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/value_espana"
+                android:layout_alignLeft="@+id/value_espana"
+                android:layout_alignStart="@+id/value_espana"
+                android:layout_alignBottom="@+id/textView_fdi"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:indeterminate="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/value_docencia"
+
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/textView_docencia"
+                android:layout_alignLeft="@+id/value_fdi"
+                android:layout_alignStart="@+id/value_fdi"
+                android:layout_above="@+id/textView_videojuegos"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:indeterminate="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/value_videojuegos"
+
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/value_docencia"
+                android:layout_alignLeft="@+id/value_docencia"
+                android:layout_alignStart="@+id/value_docencia"
+                android:layout_alignBottom="@+id/textView_videojuegos"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:indeterminate="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/value_cine"
+
+                android:layout_below="@+id/value_videojuegos"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_above="@+id/textView_curiosidad"
+                android:layout_alignLeft="@+id/value_videojuegos"
+                android:layout_alignStart="@+id/value_videojuegos"
+                android:indeterminate="false"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/value_curiosidad"
+
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/value_cine"
+                android:layout_alignLeft="@+id/value_cine"
+                android:layout_alignStart="@+id/value_cine"
+                android:layout_above="@+id/textView_ciencias"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:indeterminate="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/value_ciencias"
+
+                android:layout_below="@+id/value_curiosidad"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_above="@+id/textView_perifericos"
+                android:layout_alignLeft="@+id/value_curiosidad"
+                android:layout_alignStart="@+id/value_curiosidad"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:indeterminate="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/value_perifericos"
+
+                android:layout_below="@+id/value_ciencias"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignBottom="@+id/textView_perifericos"
+                android:layout_alignLeft="@+id/value_ciencias"
+                android:layout_alignStart="@+id/value_ciencias"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:indeterminate="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/value_arte"
+
+                android:layout_below="@+id/textView_perifericos"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_above="@+id/textView_redes"
+                android:layout_alignLeft="@+id/value_perifericos"
+                android:layout_alignStart="@+id/value_perifericos"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:indeterminate="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/value_redes"
+
+                android:layout_below="@+id/value_arte"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_above="@+id/textView_pcs"
+                android:layout_alignLeft="@+id/value_arte"
+                android:layout_alignStart="@+id/value_arte"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:indeterminate="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/value_pcs"
+
+                android:layout_below="@+id/value_redes"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_above="@+id/textView_hardware"
+                android:layout_alignLeft="@+id/value_redes"
+                android:layout_alignStart="@+id/value_redes"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:indeterminate="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/value_hardware"
+
+                android:layout_below="@+id/value_pcs"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_above="@+id/textView_almacenamiento"
+                android:layout_alignLeft="@+id/value_pcs"
+                android:layout_alignStart="@+id/value_pcs"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:indeterminate="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/value_almacenamiento"
+
+                android:layout_below="@+id/value_hardware"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_above="@+id/textView_servidores"
+                android:layout_toRightOf="@+id/textView_almacenamiento"
+                android:layout_toEndOf="@+id/textView_almacenamiento"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:indeterminate="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/value_servidores"
+
+                android:layout_alignParentEnd="true"
+                android:layout_alignBottom="@+id/textView_servidores"
+                android:layout_toRightOf="@+id/textView_almacenamiento"
+                android:layout_toEndOf="@+id/textView_almacenamiento"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:indeterminate="false" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

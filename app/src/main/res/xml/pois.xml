@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file>
+    <team>
+        <name>Real Madrid</name>
+        <image>realmadrid</image>
+        <imagestadium>realmadrid_stadium</imagestadium>
+        <namestadium>Santiago Bernabéu</namestadium>
+        <coach>Zinedine Zidane</coach>
+    </team>
+    <team>
+        <name>Atletico de Madrid</name>
+        <image>atletico</image>
+        <imagestadium>atletico_stadium</imagestadium>
+        <namestadium>Vicente Calderón</namestadium>
+        <coach>Diego Pablo Simeone</coach>
+    </team>
+    <team>
+        <name>Barcelona</name>
+        <image>barcelona</image>
+        <imagestadium>barcelona_stadium</imagestadium>
+        <namestadium>Camp Nou</namestadium>
+        <coach>Luis Enrique</coach>
+    </team>
+    <team>
+        <name>Valencia</name>
+        <image>valencia</image>
+        <imagestadium>valencia_stadium</imagestadium>
+        <namestadium>Mestalla</namestadium>
+        <coach>Pako Ayestarán</coach>
+    </team>
+    <team>
+        <name>Villarreal</name>
+        <image>villarreal</image>
+        <imagestadium>villarreal_stadium</imagestadium>
+        <namestadium>El Madrigal</namestadium>
+        <coach>Marcelino García Toral</coach>
+    </team>
+    <team>
+        <name>Sevilla</name>
+        <image>sevilla</image>
+        <imagestadium>sevilla_stadium</imagestadium>
+        <namestadium>Ramón Sánchez Pizjuán</namestadium>
+        <coach>Unai Emery</coach>
+    </team>
+    <team>
+        <name>Athletic</name>
+        <image>athletic</image>
+        <imagestadium>athletic_stadium</imagestadium>
+        <namestadium>San Mamés</namestadium>
+        <coach>Ernesto Valverde</coach>
+    </team>
+    <team>
+        <name>Espanyol</name>
+        <image>espanyol</image>
+        <imagestadium>espanyol_stadium</imagestadium>
+        <namestadium>RCDE Stadium</namestadium>
+        <coach>Constantin Galca</coach>
+    </team>
+    <team>
+        <name>Celta de Vigo</name>
+        <image>celta</image>
+        <imagestadium>celta_stadium</imagestadium>
+        <namestadium>Balaídos</namestadium>
+        <coach>Eduardo Berizzo</coach>
+    </team>
+    <team>
+        <name>Malaga</name>
+        <image>malaga</image>
+        <imagestadium>malaga_stadium</imagestadium>
+        <namestadium>La Rosaleda</namestadium>
+        <coach>Javi Gracia</coach>
+    </team>
+    <team>
+        <name>Eibar</name>
+        <image>eibar</image>
+        <imagestadium>eibar_stadium</imagestadium>
+        <namestadium>Ipurua</namestadium>
+        <coach>José Luis Mendilibar</coach>
+    </team>
+    <team>
+        <name>Betis</name>
+        <image>betis</image>
+        <imagestadium>betis_stadium</imagestadium>
+        <namestadium>Benito Villamarín</namestadium>
+        <coach>Juan Merino</coach>
+    </team>
+    <team>
+        <name>Getafe</name>
+        <image>getafe</image>
+        <imagestadium>getafe_stadium</imagestadium>
+        <namestadium>Coliseum Alfonso Pérez</namestadium>
+        <coach>Juan Esnáider</coach>
+    </team>
+    <team>
+        <name>Las Palmas</name>
+        <image>laspalmas</image>
+        <imagestadium>laspalmas_stadium</imagestadium>
+        <namestadium>Gran Canaria Arena</namestadium>
+        <coach>Quique Setién</coach>
+    </team>
+    <team>
+        <name>Levante</name>
+        <image>levante</image>
+        <imagestadium>levante_stadium</imagestadium>
+        <namestadium>Ciutat de València</namestadium>
+        <coach>Rubi</coach>
+    </team>
+    <team>
+        <name>Real Sociedad</name>
+        <image>realsociedad</image>
+        <imagestadium>realsociedad_stadium</imagestadium>
+        <namestadium>Anoeta</namestadium>
+        <coach>Eusebio Sacristán</coach>
+    </team>
+    <team>
+        <name>Rayo Vallecano</name>
+        <image>rayo</image>
+        <imagestadium>rayo_stadium</imagestadium>
+        <namestadium>Vallecas</namestadium>
+        <coach>Paco Jémez</coach>
+    </team>
+    <team>
+        <name>Granada</name>
+        <image>granada</image>
+        <imagestadium>granada_stadium</imagestadium>
+        <namestadium>Los Cármenes</namestadium>
+        <coach>José Gonzalez</coach>
+    </team>
+    <team>
+        <name>Deportivo Coruña</name>
+        <image>deportivo</image>
+        <imagestadium>deportivo_stadium</imagestadium>
+        <namestadium>Riazor</namestadium>
+        <coach>Víctor Sánchez del Amo</coach>
+    </team>
+    <team>
+        <name>Sporting de Gijon</name>
+        <image>sporting</image>
+        <imagestadium>sporting_stadium</imagestadium>
+        <namestadium>El Molinón</namestadium>
+        <coach>Abelardo Fernández</coach>
+    </team>
+</file>

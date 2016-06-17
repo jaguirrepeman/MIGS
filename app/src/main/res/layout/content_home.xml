@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Elige las categorías en las que estés interesado"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView"
+        android:layout_above="@+id/button_back">
+
+    <RelativeLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Historia"
+            android:id="@+id/checkBox_historia"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="España"
+            android:id="@+id/checkBox_espana"
+            android:layout_below="@+id/checkBox_historia"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FDI"
+            android:id="@+id/checkBox_fdi"
+            android:layout_below="@+id/checkBox_espana"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Docencia"
+            android:id="@+id/checkBox_docencia"
+            android:layout_below="@+id/checkBox_fdi"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Videojuegos"
+            android:id="@+id/checkBox_videojuegos"
+            android:layout_below="@+id/checkBox_docencia"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cine"
+            android:id="@+id/checkBox_cine"
+            android:layout_below="@+id/checkBox_videojuegos"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Curiosidades"
+            android:id="@+id/checkBox_curiosidad"
+            android:layout_below="@+id/checkBox_cine"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ciencias"
+            android:id="@+id/checkBox_ciencias"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/checkBox_curiosidad" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Periféricos"
+            android:id="@+id/checkBox_perifericos"
+            android:layout_below="@+id/checkBox_ciencias"
+            android:layout_alignEnd="@+id/checkBox_servidores"
+            android:layout_alignParentLeft="true" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arte"
+            android:id="@+id/checkBox_arte"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/checkBox_perifericos" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Redes"
+            android:id="@+id/checkBox_redes"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/checkBox_arte" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PCs"
+            android:id="@+id/checkBox_pcs"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/checkBox_redes" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hardware"
+            android:id="@+id/checkBox_hardware"
+            android:layout_below="@+id/checkBox_pcs"
+            android:layout_alignEnd="@+id/checkBox_curiosidad"
+            android:layout_alignParentLeft="true" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Almacenamiento"
+            android:id="@+id/checkBox_almacenamiento"
+            android:layout_below="@+id/checkBox_hardware"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Servidores"
+            android:id="@+id/checkBox_servidores"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="53dp"
+            android:layout_below="@+id/checkBox_almacenamiento"
+            android:layout_alignParentEnd="true" />
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar_historia"
+            android:visibility="invisible"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/checkBox_almacenamiento"
+            android:layout_alignBottom="@+id/checkBox_historia"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:max="100"
+            android:indeterminate="false" />
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar_espana"
+            android:visibility="invisible"
+            android:layout_below="@+id/seekBar_historia"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/checkBox_espana"
+            android:layout_alignLeft="@+id/seekBar_historia"
+            android:layout_alignStart="@+id/seekBar_historia"
+            android:max="100"
+            android:indeterminate="false" />
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar_fdi"
+            android:visibility="invisible"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/seekBar_espana"
+            android:layout_alignLeft="@+id/seekBar_espana"
+            android:layout_alignStart="@+id/seekBar_espana"
+            android:layout_alignBottom="@+id/checkBox_fdi"
+            android:max="100"
+            android:indeterminate="false" />
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar_docencia"
+            android:visibility="invisible"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/checkBox_docencia"
+            android:layout_alignLeft="@+id/seekBar_fdi"
+            android:layout_alignStart="@+id/seekBar_fdi"
+            android:layout_above="@+id/checkBox_videojuegos"
+            android:max="100"
+            android:indeterminate="false" />
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar_videojuegos"
+            android:visibility="invisible"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/seekBar_docencia"
+            android:layout_alignLeft="@+id/seekBar_docencia"
+            android:layout_alignStart="@+id/seekBar_docencia"
+            android:layout_alignBottom="@+id/checkBox_videojuegos"
+            android:max="100"
+            android:indeterminate="false" />
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar_cine"
+            android:visibility="invisible"
+            android:layout_below="@+id/seekBar_videojuegos"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_above="@+id/checkBox_curiosidad"
+            android:layout_alignLeft="@+id/seekBar_videojuegos"
+            android:layout_alignStart="@+id/seekBar_videojuegos"
+            android:indeterminate="false"
+            android:max="100" />
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar_curiosidad"
+            android:visibility="invisible"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/seekBar_cine"
+            android:layout_alignLeft="@+id/seekBar_cine"
+            android:layout_alignStart="@+id/seekBar_cine"
+            android:layout_above="@+id/checkBox_ciencias"
+            android:max="100"
+            android:indeterminate="false" />
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar_ciencias"
+            android:visibility="invisible"
+            android:layout_below="@+id/seekBar_curiosidad"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_above="@+id/checkBox_perifericos"
+            android:layout_alignLeft="@+id/seekBar_curiosidad"
+            android:layout_alignStart="@+id/seekBar_curiosidad"
+            android:max="100"
+            android:indeterminate="false" />
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar_perifericos"
+            android:visibility="invisible"
+            android:layout_below="@+id/seekBar_ciencias"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/checkBox_perifericos"
+            android:layout_alignLeft="@+id/seekBar_ciencias"
+            android:layout_alignStart="@+id/seekBar_ciencias"
+            android:max="100"
+            android:indeterminate="false" />
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar_arte"
+            android:visibility="invisible"
+            android:layout_below="@+id/checkBox_perifericos"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_above="@+id/checkBox_redes"
+            android:layout_alignLeft="@+id/seekBar_perifericos"
+            android:layout_alignStart="@+id/seekBar_perifericos"
+            android:max="100"
+            android:indeterminate="false" />
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar_redes"
+            android:visibility="invisible"
+            android:layout_below="@+id/seekBar_arte"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_above="@+id/checkBox_pcs"
+            android:layout_alignLeft="@+id/seekBar_arte"
+            android:layout_alignStart="@+id/seekBar_arte"
+            android:max="100"
+            android:indeterminate="false" />
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar_pcs"
+            android:visibility="invisible"
+            android:layout_below="@+id/seekBar_redes"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_above="@+id/checkBox_hardware"
+            android:layout_alignLeft="@+id/seekBar_redes"
+            android:layout_alignStart="@+id/seekBar_redes"
+            android:max="100"
+            android:indeterminate="false" />
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar_hardware"
+            android:visibility="invisible"
+            android:layout_below="@+id/seekBar_pcs"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_above="@+id/checkBox_almacenamiento"
+            android:layout_alignLeft="@+id/seekBar_pcs"
+            android:layout_alignStart="@+id/seekBar_pcs"
+            android:max="100"
+            android:indeterminate="false" />
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar_almacenamiento"
+            android:visibility="invisible"
+            android:layout_below="@+id/seekBar_hardware"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_above="@+id/checkBox_servidores"
+            android:layout_toRightOf="@+id/checkBox_almacenamiento"
+            android:layout_toEndOf="@+id/checkBox_almacenamiento"
+            android:max="100"
+            android:indeterminate="false" />
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar_servidores"
+            android:visibility="invisible"
+            android:layout_below="@+id/seekBar_almacenamiento"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/checkBox_servidores"
+            android:layout_toRightOf="@+id/checkBox_almacenamiento"
+            android:layout_toEndOf="@+id/checkBox_almacenamiento"
+            android:max="100"
+            android:indeterminate="false" />
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONFIRMAR"
+        android:id="@+id/button_confirmar"
+        android:layout_below="@+id/scrollView2"
+        android:layout_alignRight="@+id/scrollView2"
+        android:layout_alignEnd="@+id/scrollView2"
+        android:textColor="@android:color/white"
+        android:layout_marginRight="43dp"
+        android:layout_marginEnd="43dp" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESETEAR"
+        android:id="@+id/button_back"
+        android:layout_marginLeft="47dp"
+        android:layout_marginStart="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

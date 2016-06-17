@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">MIGS</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_section1">Todos los objetos</string>
+    <string name="title_section2">Recomendador</string>
+    <string name="title_section3">Recomendaciones</string>
+    <string name="poi_detail_info_title">Información</string>
+    <string name="poi_detail_info_name_title">Nombre: </string>
+    <string name="poi_detail_info_time_title">Tiempo recomendado: </string>
+    <string name="poi_detail_info_weights_title">Categorías asociadas: </string>
+    <string name="startAR1">POIs</string>
+    <string name="startAR2">3D Objects</string>
+    <string name="startAR3">MIGS</string>
+    <string name="poi_name">Nombre</string>
+    <string name="poi_description">Descripción</string>
+    <string name="poi_id">ID</string>
+    <string name="main_title_urlLauncher">Lanzar Mundo via url</string>
+    <string name="compass_accuracy_low">Por favor recalibra el acelerómetro moviendo el dispositivo en forma de 8.</string>
+    <string name="location_fetching">Intentando averiguar dónde estás</string>
+    <string name="device_unsupported">Este dispositivo no está soportado</string>
+    <string name="videosrawables_fallback">Los vídeos se renderizan a pantalla completa en este dispositivo</string>
+    <string name="urllauncher_menu_clear_history">Borrar historial</string>
+    <string name="urllauncher_button_launch">Lanzar</string>
+    <string name="poi_detail_title">Detalles del punto</string>
+    <string name="urllauncher_hint_textfield">http://</string>
+    <string name="urllauncher_default_value_textfield">http://</string>
+    <string name="title_activity_confirmed_choices">Confirmación de preferencias</string>
+    <string name="ciencias">Ciencias</string>
+    <string name="title_activity_sample1_poi_detail">Sample 5.1 POI Detail</string>
+    <string name="footer">Sample App</string>
+
+</resources>
